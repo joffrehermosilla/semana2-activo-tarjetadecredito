@@ -6,9 +6,14 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Document(collection = "active-account-credit-card")
 public class CreditCardActiveAccount {
 	// el id será el número de transacción que se anexará a la cuenta para consultar
